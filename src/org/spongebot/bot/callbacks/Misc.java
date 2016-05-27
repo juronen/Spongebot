@@ -2,7 +2,7 @@ package org.spongebot.bot.callbacks;
 
 public class Misc {
 
-    // Random shit I test
+    // Callback for research purposes
     public static void check(String s, String cl, String mn) {
         int[] i = null;
         if (s instanceof String) {
