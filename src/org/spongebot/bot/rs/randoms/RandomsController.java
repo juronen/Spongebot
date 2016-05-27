@@ -20,9 +20,9 @@ public class RandomsController {
         events.put("StrangeBox", new StrangeBox());
     }
 
-    // So, in the hypothetical scenario that this will be a finished bot with a community and shit,
+    // So, in the hypothetical scenario that this will be a finished bot with a community ,
     // I figured it'd be useful for scripters / users to be able to override the bot's random event handlers
-    // in case I take a month or five off drinking margaritas at the beach. The way this would work is
+    // in case I take a month or five off. The way this would work is
     // someone posts a patch on the forums, then a scripter compiles their script along with the random patch
     // and calls RandomsController.patch("kanker", MyPatchedEvent); in the beginning of their script.
 
