@@ -60,8 +60,6 @@ public class Util implements Opcodes {
                     JumpInsnNode jin = (JumpInsnNode) getPrevious(ain);
                     LabelNode ln = jin.label;
                     mn.instructions.set(mn.instructions.get(index), new JumpInsnNode(GOTO, ln));
-                    // Brb deciphering why the fuck that below line is there. It was something to the tune of 7 am
-                    // when it sounded like a great idea. Probs useless. Scared to remove it.
                     mn.instructions.insert(getPrevious(getPrevious(jin)), new InsnNode(ICONST_0));
                 }
             } else if (ain.getOpcode() == Opcodes.RETURN && ain.getPrevious() instanceof JumpInsnNode) {
