@@ -59,7 +59,7 @@ public class ScriptController {
         if (scriptThread != null) {
             try {
                 ScreenMover.stop();
-                scriptThread.stop(); // IDGAF if deprecated, I want that shit to stop
+                scriptThread.stop();
                 scriptThread = null;
                 currentScript.onStop();
                 currentScript = null;
